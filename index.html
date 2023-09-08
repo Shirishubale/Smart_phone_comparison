@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smartphone Comparison</title>
+    <!-- Add your CSS stylesheets and JavaScript libraries here -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+    /* Reset some default styles for better consistency */
+body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+/* Apply a background color and set font styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Style the header section */
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+/* Style the navigation menu */
+nav ul {
+    background-color: #333;
+    list-style-type: none;
+    text-align: center;
+    padding: 0.5rem 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Style the main content section */
+main {
+    padding: 1rem;
+}
+
+/* Style the smartphone listings */
+.smartphone-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.smartphone {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
+    padding: 10px;
+    width: 48%;
+}
+
+.smartphone img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Style the footer section */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 0.5rem 0;
+}
+
+/* Add styles for mobile responsiveness */
+@media screen and (max-width: 768px) {
+    nav ul {
+        display: none;
+        background-color: #333;
+        position: absolute;
+        width: 100%;
+        top: 50px;
+        left: 0;
+        text-align: center;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 10px;
+    }
+
+    .menu-toggle {
+        display: block;
+        background-color: #333;
+        color: #fff;
+        text-align: center;
+        padding: 10px;
+        cursor: pointer;
+    }
+
+    .smartphone-list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        flex-direction: row; /* Display items in a row */
+    }
+
+    .smartphone {
+        width: calc(50% - 10px); /* Adjust the width to your liking */
+        margin-bottom: 20px;
+    }
+}
+
+
+
+</style>
+<body>
+    <header>
+        <h1>Welcome to Smartphone Comparison</h1>
+    </header>
+    <nav>
+        <!-- Create a navigation menu for your website -->
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Compare Smartphones</a></li>
+            <li><a href="#">Reviews</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+    <main>
+        <!-- Add content related to smartphone comparisons here -->
+        <h2>Latest Smartphones</h2>
+        <section class="smartphone-list">
+            <!-- Add smartphone listings here -->
+            <article class="smartphone">
+                <img src="https://www.apple.com/v/iphone-14/i/images/key-features/features/size/size_yellow__dnv9794q7loy_large.jpg" alt="iPhone">
+                <h3>Apple iPhone 12</h3>
+                <p>Price: $699</p>
+                <p>Specifications: Lorem ipsum...</p>
+            </article>
+            <article class="smartphone">
+                <img src="https://images.samsung.com/in/smartphones/galaxy-s23/compare/images/galaxy-s23-plus-compare-lavender.jpg" alt="Samsung Galaxy">
+                <h3>Samsung Galaxy S21</h3>
+                <p>Price: $799</p>
+                <p>Specifications: Lorem ipsum...</p>
+            </article>
+            <!-- Add more smartphone listings as needed -->
+        </section>
+    </main>
+    <footer>
+        <!-- Add footer content, such as copyright information and links -->
+        <p>&copy; 2023 Smartphone Comparison</p>
+    </footer>
+</body>
+</html>
